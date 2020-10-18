@@ -24,12 +24,12 @@
             background: url(img/bg.jpg);
             background-size: cover;
             background-position: center;
-            min-height: 1000px;
+            min-height: 1000 px;
         }
         
-        @media screen and (max-width: 670px) {
+        @media screen and (max-width: 670 px) {
             header {
-                min-height: 500px;
+                min-height: 500 px;
             }
         }
     </style>
@@ -52,23 +52,23 @@
                 <!--rigth alinha os elementos a direita
                     hide vai esconder os elementos em telas de tamanho médio ou menor-->
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ínicio</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Inscrição</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-
+                <!--elementos que irão ser convocados pelo icone de menu quando a tela for de tamanho médio ou menor-->
+                <ul class="sidenav" id="mobile-links">
+                    <li><a href="#">Ínicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Inscrição</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <!--elementos que irão ser convocados pelo icone de menu quando a tela for de tamanho médio ou menor-->
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Inscrição</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
+
 
     <!--Importando JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -78,6 +78,7 @@
     <script>
         $(document).ready(function() {
             $('.sidenav').sidenav();
+            $('.parallax').parallax();
         });
     </script>
 </body>
