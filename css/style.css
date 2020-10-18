@@ -1,1 +1,12 @@
 * {}
+
+h1 {
+    color: red;
+}
+
+.row>div {
+    padding: 10px;
+    background: gray;
+    border: 1px solid white;
+    line-height: 60px;
+}
