@@ -20,53 +20,61 @@
 
     <title>MusikCity</title>
     <style>
-        header {
-            background: url(img/bg.jpg);
-            background-size: cover;
-            background-position: center;
-            min-height: 1000 px;
-        }
-        
-        @media screen and (max-width: 670 px) {
-            header {
-                min-height: 500 px;
-            }
-        }
+
     </style>
 </head>
 
 <body>
 
-    <header>
-        <!--criando barra de navegação-->
-        <nav class="nav-wrapper blue">
-            <!--a classe container adiciona um recuo aos elementos-->
-            <div class="container">
-                <!--brand-logo adiciona o logo à barra de navegação-->
-                <a href="#" class="brand-logo">MusikCity</a>
-                <!--Adicionando ícone que vai invocar os elementos da barra-->
-                <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                    <i class="material-icons">menu</i>
-                </a>
+    <!--criando barra de navegação-->
+    <nav class="nav-wrapper cyan lighten-2">
+        <!--a classe container adiciona um recuo aos elementos-->
+        <div class="container">
+            <!--brand-logo adiciona o logo à barra de navegação-->
+            <a href="#" class="brand-logo">MusikCity</a>
+            <!--Adicionando ícone que vai invocar os elementos da barra-->
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
 
-                <!--rigth alinha os elementos a direita
+            <!--rigth alinha os elementos a direita
                     hide vai esconder os elementos em telas de tamanho médio ou menor-->
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Inscrição</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <!--elementos que irão ser convocados pelo icone de menu quando a tela for de tamanho médio ou menor-->
-                <ul class="sidenav" id="mobile-links">
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Inscrição</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Ínicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Inscrição</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <!--elementos que irão ser convocados pelo icone de menu quando a tela for de tamanho médio ou menor-->
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#">Ínicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Inscrição</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--criando banner principal-->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center cyan-text text-darken-1">Teste</h1>
+
+                <div class="row center">
+                    <h5 class="header col s12 cyan-text text-darken-1">Teste 2</h5>
+                </div>
+
+                <div class="row center">
+                    <a href="#" id="sobre-atalho" class="btn waves-effect waves-light cyan darken-3">Saiba mais</a>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+        <div class="parallax">
+            <img src="img/bg.jpg" alt="banner1" class="responsive">
+        </div>
+    </div>
 
 
 
