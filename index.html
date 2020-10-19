@@ -26,6 +26,7 @@
 
 <body>
 
+    <!--Observação: cores atuais são temporárias!-->
     <!--criando barra de navegação-->
     <nav class="nav-wrapper cyan lighten-2">
         <!--a classe container adiciona um recuo aos elementos-->
@@ -55,7 +56,8 @@
         </div>
     </nav>
 
-    <!--criando banner principal-->
+    <!--criando banner principal
+        substituição do img background no header pelo parallax-->
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
@@ -65,14 +67,36 @@
                 <div class="row center">
                     <h5 class="header col s12 cyan-text text-darken-1">Teste 2</h5>
                 </div>
-
+                <!--waves effect faz um efeito de onda no botão quando ele é acionado pelo usuário-->
                 <div class="row center">
                     <a href="#" id="sobre-atalho" class="btn waves-effect waves-light cyan darken-3">Saiba mais</a>
                 </div>
             </div>
         </div>
         <div class="parallax">
-            <img src="img/bg.jpg" alt="banner1" class="responsive">
+            <img src="img/bg.jpg" alt="banner1" class="responsive-img">
+        </div>
+    </div>
+
+    <!--criando seções para apresentar funções do site-->
+    <div class="container section" id="info">
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <h2 class="center cyan-text text-darken-3">Sobre</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sapiente officiis accusamus neque eius, sed ratione ut laboriosam excepturi odio quia aut possimus numquam magni ad maiores dolor iste amet.</p>
+                <br><a href="#" class="btn waves-effect waves-light cyan darken-3 center">Saiba mais</a>
+
+            </div>
+            <div class="col s12 m4 l4">
+                <h2 class="center cyan-text text-darken-3">Inscrição</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sapiente officiis accusamus neque eius, sed ratione ut laboriosam excepturi odio quia aut possimus numquam magni ad maiores dolor iste amet.</p>
+                <a href="#" class="btn waves-effect waves-light cyan darken-3 center-align">Saiba mais</a>
+            </div>
+            <div class="col s12 m4 l4">
+                <h2 class="center cyan-text text-darken-3">Contato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sapiente officiis accusamus neque eius, sed ratione ut laboriosam excepturi odio quia aut possimus numquam magni ad maiores dolor iste amet.</p>
+                <a href="#" class="btn waves-effect waves-light cyan darken-3 center-align">Saiba mais</a>
+            </div>
         </div>
     </div>
 
