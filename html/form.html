@@ -38,26 +38,59 @@
             <!--rigth alinha os elementos a direita
                     hide vai esconder os elementos em telas de tamanho médio ou menor-->
             <ul class="right hide-on-med-and-down">
-                <li><a href="#inicio">Ínicio</a></li>
+                <li><a href="../index.html">Ínicio</a></li>
                 <li><a href="https://musikcity.mus.br/">Sobre</a></li>
-                <li><a href="html/form.html">Inscrição</a></li>
-                <li><a href="html/contato.html">Contato</a></li>
+                <li><a href="#">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
             <!--elementos que irão ser convocados pelo icone de menu quando a tela for de tamanho médio ou menor-->
             <ul class="sidenav" id="mobile-links">
-                <li><a href="#inicio">Ínicio</a></li>
+                <li><a href="../index.html">Ínicio</a></li>
                 <li><a href="https://musikcity.mus.br/">Sobre</a></li>
-                <li><a href="html/form.html">Inscrição</a></li>
-                <li><a href="html.contato.html">Contato</a></li>
+                <li><a href="#">Inscrição</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     <!--criando seções para o formulário-->
-    <div class="container section" id="info">
+    <section class="section container">
+        <h2 class="cyan-text text-darken-3">Formulário</h2>
         <div class="row">
+            <div class="col s12 l5">
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="nome">
+                        <label for="nome">Insira o seu nome</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date"> Insira a sua data de nascimento</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email">
+                        <label for="email">Insira o seu email profissional</label>
+                    </div>
+                </form>
+            </div>
+            <div class="col s12 l5 offset-2">
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="sobrenome">
+                        <label for="sobrenome">Insira o seu sobrenome</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="cidade">
+                        <label for="cidade">Insira a cidade e o estado em que reside</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="telefone" length="11">
+                        <label for="telefone">Insira o seu telefone</label>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!--criando banner limpo utilizando o parallax-->
     <div class="parallax-container">
