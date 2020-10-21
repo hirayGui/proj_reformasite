@@ -29,7 +29,7 @@
         <!--a classe container adiciona um recuo aos elementos-->
         <div class="container">
             <!--brand-logo adiciona o logo à barra de navegação-->
-            <a href="#" class="brand-logo">MusikCity</a>
+            <a href="../index.html" class="brand-logo">MusikCity</a>
             <!--Adicionando ícone que vai invocar os elementos da barra-->
             <a href="#" class="sidenav-trigger" data-target="mobile-links">
                 <i class="material-icons">menu</i>
@@ -55,41 +55,55 @@
 
     <!--criando seções para o formulário-->
     <section class="section container">
-        <h2 class="cyan-text text-darken-3">Formulário</h2>
-        <div class="row">
-            <div class="col s12 l5">
-                <form>
+        <h2 class="cyan-text text-darken-3">Formulário de inscrição</h2>
+        <!--antes de ser enviado, formulário chama função para validar informações que foram inseridas-->
+        <form method="POST" action="#" onsubmit="return validaForm(this);">
+            <div class="row">
+                <div class="col s12 l5">
+
                     <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
                         <input type="text" id="nome">
                         <label for="nome">Insira o seu nome</label>
                     </div>
                     <div class="input-field">
+                        <i class="material-icons prefix">today</i>
                         <input type="text" id="date" class="datepicker">
                         <label for="date"> Insira a sua data de nascimento</label>
                     </div>
                     <div class="input-field">
+                        <i class="material-icons prefix">call</i>
+                        <input type="text" id="telefone" data-lenght="11">
+                        <label for="telefone">Insira o seu telefone</label>
+                    </div>
+                </div>
+
+                <div class="col s12 l5 offset-2">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
                         <input type="email" id="email">
                         <label for="email">Insira o seu email profissional</label>
                     </div>
-                </form>
-            </div>
-            <div class="col s12 l5 offset-2">
-                <form>
                     <div class="input-field">
-                        <input type="text" id="sobrenome">
-                        <label for="sobrenome">Insira o seu sobrenome</label>
-                    </div>
-                    <div class="input-field">
+                        <i class="material-icons prefix">apartment</i>
                         <input type="text" id="cidade">
                         <label for="cidade">Insira a cidade e o estado em que reside</label>
                     </div>
-                    <div class="input-field">
-                        <input type="text" id="telefone" length="11">
-                        <label for="telefone">Insira o seu telefone</label>
+                    <div class="file-field input-field">
+                        <div class="btn">
+                            <span>Arquivo</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input type="text" class="file-path validate" placeholder="Envie sua partitura">
+                        </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+            <button class="btn waves-effect waves-dark" type="submit" name="action" id="enviar">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
     </section>
 
     <!--criando banner limpo utilizando o parallax-->
