@@ -13,23 +13,17 @@ function validaForm(frm) {
         alert("Insira o seu nome!");
         frm.nome.focus();
         return false;
-    }
+    } else
 
     if (frm.email.value.indexOf("@") == -1 || frm.email.valueOf.indexOf(".") == -1 || frm.email.value == null) {
         alert("Insira um email válido!");
         frm.email.focus();
         return false;
-    }
+    } else
 
     if (frm.cidade.value == "" || frm.cidade.value == null || frm.cidade.value.lenght < 3) {
         alert("Insira uma cidade!");
         frm.cidade.focus();
-        return false;
-    }
-
-    if (frm.telefone.value == "" || frm.telefone.value == null || frm.telefone.value.lenght < 9) {
-        alert("Insira o seu telefone!");
-        frm.telefone.focus();
         return false;
     }
 }

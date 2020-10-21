@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--Guilherme de Sousa Brito - SP3013189
+    Site escolhido: musikcity.mus.br
+    Framework utlizado: Materialize css-->
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+
+    <!--Importando ícones-->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Importando o Materialize CSS-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <title>MusikCity</title>
+
+</head>
+
+<body>
+
+    <!--Observação: cores atuais são temporárias!-->
+    <!--criando barra de navegação-->
+    <nav class="nav-wrapper cyan darken-2">
+        <!--a classe container adiciona um recuo aos elementos-->
+        <div class="container">
+            <!--brand-logo adiciona o logo à barra de navegação-->
+            <a href="#" class="brand-logo">MusikCity</a>
+            <!--Adicionando ícone que vai invocar os elementos da barra-->
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <!--rigth alinha os elementos a direita
+                    hide vai esconder os elementos em telas de tamanho médio ou menor-->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#inicio">Ínicio</a></li>
+                <li><a href="https://musikcity.mus.br/">Sobre</a></li>
+                <li><a href="html/form.html">Inscrição</a></li>
+                <li><a href="html/contato.html">Contato</a></li>
+            </ul>
+            <!--elementos que irão ser convocados pelo icone de menu quando a tela for de tamanho médio ou menor-->
+            <ul class="sidenav" id="mobile-links">
+                <li><a href="#inicio">Ínicio</a></li>
+                <li><a href="https://musikcity.mus.br/">Sobre</a></li>
+                <li><a href="html/form.html">Inscrição</a></li>
+                <li><a href="html.contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--criando banner limpo utilizando o parallax-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="../img/banner2.jpg" alt="banner2" class="responsive-img">
+        </div>
+    </div>
+
+    <!--criando rodapé-->
+    <footer class="page-footer cyan darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l5">
+                    <h5 id="sobrenos">Sobre nós</h5>
+                    <p>MusikCity também foi o primeiro site de rádios da internet (no mesmo ano em que também surgiu o Radios.com.br), e foi o primeiro site de Páginas de Artistas da internet. O site, que foi feito com apoio de radialistas de todo o Brasil,
+                        já tem mais de 8.000 radialistas cadastrados espontaneamente.</p>
+                </div>
+                <div class="col s12 l4 offset-l3">
+                    <h5>Redes Sociais</h5>
+                    <ul>
+                        <li><a href="https://pt-br.facebook.com/musikcity" class="white-text">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/musikcity_rj/?hl=pt-br" class="white-text">Instagram</a></li>
+                        <li><a href="https//www.myspace.com/musikcity" class="white-text">MySpace</a></li>
+                        <li><a href="https://www.twitter.com/musikcity" class="white-text">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright cyan darken-4">
+            <div class="container center-align">MUSIKCITY&copy; 2020</div>
+        </div>
+    </footer>
+
+    <!--Importando JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+
+</html>
