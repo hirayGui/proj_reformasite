@@ -6,6 +6,7 @@ $(document).ready(function() {
     });
     $('select').material_select();
     $('.tabs').tabs();
+    $('textarea').characterCounter();
 });
 
 function validaForm(frm) {
